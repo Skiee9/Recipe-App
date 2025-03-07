@@ -25,7 +25,7 @@ const Home = () => {
   if (loading) return <h2>Loading Recipes...</h2>;
 
   return (
-    <div>
+    <div >
       <h1>Popular Recipes</h1>
       <div className="recipes-container">
         {recipes && recipes.map((recipe) => (

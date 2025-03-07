@@ -3,7 +3,8 @@ import '../styles/RecipeCard.css';
 
 const RecipeCard = ({ recipe }) => {
   return (
-    <div className="recipe-card">
+    <div className='recipe'>
+         <div className="recipe-card">
       <img src={recipe.image} alt={recipe.title} className="recipe-image" />
       <div className="recipe-content">
         <h2 className="recipe-title">{recipe.title}</h2>
@@ -15,6 +16,8 @@ const RecipeCard = ({ recipe }) => {
         <button className="recipe-btn">View Recipe</button>
       </div>
     </div>
+    </div>
+   
   );
 };
 
