@@ -9,17 +9,17 @@ const Navbar = () => {
 
 
     <div>
-      <Link to="/home">logo</Link>
+      <Link to="/home"><img src='https://cdn.freebiesupply.com/logos/thumbs/2x/my-recipes-logo.png' alt='logo' height="40px" width="40px"/></Link>
     </div>
 
-    
+
     {/* middle navbar */}
     <div className='center-nav'>  
     <Link to="/">Home</Link>
     <Link to="/about">About</Link>
     </div>
    
-     <Link to="/login">Login</Link>
+     <button><Link to="/login">Log In</Link></button>
     </nav>
   )
 }
