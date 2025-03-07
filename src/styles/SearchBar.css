@@ -3,25 +3,36 @@
     /* align-items: center; */
     gap: 8px;
     padding: 8px;
-    margin:auto;
+    
+    /* margin:auto; */
+
     /* background-color: #f5f5f5; */
     border-radius: 8px;
   }
-  
+  .search{
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+  }
   .search-bar input {
     padding: 8px;
-    border: 1px solid #efecec;
-    border-radius: 6px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
     outline: none;
+    width: 50vw;
+    background-color:  #efecec;
     flex: 1;
   }
   
   .search-bar button {
     padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
+    background-color:  #efecec;
+    color: blue;
     border: none;
-    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
     cursor: pointer;
   }
   

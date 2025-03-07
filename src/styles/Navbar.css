@@ -1,6 +1,6 @@
 nav{
     display:flex;
-    /* padding:2px; */
+    padding:0 4px;
     font-size: 1.2rem;
     font-weight: 600;
     justify-content: center;
@@ -22,7 +22,7 @@ nav{
    
 }
 nav button{
-    background-color: #eaeeeac0;
+    background-color:  #efecec;
     /* text-decoration: none;
     color:blue; */
     padding:9px 20px;
