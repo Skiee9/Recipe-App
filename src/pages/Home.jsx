@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <div >
-      <h1>Popular Recipes</h1>
+      {/* <h1>Popular Recipes</h1> */}
       <div className="recipes-container">
         {recipes && recipes.map((recipe) => (
           <RecipeCard

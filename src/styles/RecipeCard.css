@@ -14,8 +14,9 @@
      /* width:90vw; */
      margin: auto;
     grid-template-columns:repeat(3,1fr); 
-    gap:15px;
-    padding:0 12px;
+    gap:30px;
+    margin:17px;
+    padding:10px 12px;
     justify-items: center;
   }
   .recipe-card:hover {
@@ -47,7 +48,7 @@
   
   .recipe-btn {
     padding: 10px 20px;
-    background-color: #ff7f50;
+    background-color: #123651;
     color: #fff;
     border: none;
     border-radius: 8px;
