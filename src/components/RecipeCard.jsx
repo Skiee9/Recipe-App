@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/RecipeCard.css';
+import { Link } from 'react-router-dom';
 
 const RecipeCard = ({ recipe }) => {
   return (
@@ -13,7 +14,10 @@ const RecipeCard = ({ recipe }) => {
             ? recipe.description.substring(0, 100) + '...'
             : recipe.description}
         </p>
-        <button className="recipe-btn">View Recipe</button>
+        {/* <button className="recipe-btn">View Recipe</button> */}
+        <Link to={`/recipe/${recipe.idMeal}`} className="recipe-btn">
+            View Recipe
+          </Link>
       </div>
     </div>
     </div>
