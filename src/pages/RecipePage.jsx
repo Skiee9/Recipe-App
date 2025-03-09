@@ -1,7 +1,6 @@
-
 import React from "react";
-import RecipeDetail from "./RecipeDetail";
-import "../styles/RecipePage.css"; // Import styling for better UI
+import RecipeDetail from "../components/RecipeDetail";
+import "../styles/RecipePage.css"; 
 
 const RecipePage = () => {
   return (
