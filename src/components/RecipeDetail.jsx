@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "../styles/RecipePage.css"; 
 
 const RecipeDetail = () => {
-  const { idMeal } = useParams(); // Ensure idMeal is correctly extracted from URL
+  const { idMeal } = useParams();
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -43,27 +44,64 @@ const RecipeDetail = () => {
     fetchRecipeDetail();
   }, [idMeal]);
 
-  if (loading) return <h2>Loading Recipe...</h2>;
-  if (error) return <h2>{error}</h2>;
-  if (!recipe) return <h2>No recipe found.</h2>;
+  if (loading) return <h2 className="loading">Loading Recipe...</h2>;
+  if (error) return <h2 className="error">{error}</h2>;
+  if (!recipe) return <h2 className="error">No recipe found.</h2>;
+
+
+  // added the date for the estimated time for cooking to add more features
+
+  const cookingTimes = {
+    "Beef": "45-60 mins",
+    "Chicken": "30-45 mins",
+    "Vegetarian": "20-30 mins",
+    "Seafood": "25-40 mins",
+    "Pasta": "15-25 mins",
+    "Dessert": "30-60 mins"
+  };
+
+  const estimatedTime = cookingTimes[recipe.strCategory] || "30-45 mins";
+  const servings = "2-4 people";
+
+  // Check if the recipe is vegetarian
+  const isVegetarian = recipe.strCategory.toLowerCase().includes("vegetarian") || recipe.strCategory.toLowerCase().includes("vegan");
 
   return (
     <div className="recipe-detail">
-      <h1>{recipe.strMeal}</h1>
-      <img src={recipe.strMealThumb} alt={recipe.strMeal} />
-      <p>{recipe.strInstructions}</p>
+      <div className="recipe-image">
+        <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+      </div>
 
-      <h3>Ingredients:</h3>
-      <ul>
-        {Array.from({ length: 20 }).map((_, i) => {
-          const ingredient = recipe[`strIngredient${i + 1}`];
-          const measure = recipe[`strMeasure${i + 1}`];
+      <div className="recipe-content">
+        <h1 className="recipe-title">{recipe.strMeal}</h1>
 
-          return ingredient && ingredient.trim() !== "" ? (
-            <li key={i}>{measure} {ingredient}</li>
-          ) : null;
-        })}
-      </ul>
+        <div className="recipe-meta">
+          <p><strong>Category:</strong> {recipe.strCategory}</p>
+          <p><strong>Cuisine:</strong> {recipe.strArea}</p>
+          <p><strong>Cooking Time:</strong> {estimatedTime}</p>
+          <p><strong>Servings:</strong> {servings}</p>
+          <p><strong>Dietary Info:</strong> {isVegetarian ? "Vegetarian 🌱" : "Non-Vegetarian 🍖"}</p>
+        </div>
+
+        <p className="recipe-info">{recipe.strInstructions}</p>
+
+        <h3>Ingredients:</h3>
+        <ul className="ingredients-list">
+          {Array.from({ length: 20 }).map((_, i) => {
+            const ingredient = recipe[`strIngredient${i + 1}`];
+            const measure = recipe[`strMeasure${i + 1}`];
+
+            return ingredient && ingredient.trim() !== "" ? (
+              <li key={i}>{measure} {ingredient}</li>
+            ) : null;
+          })}
+        </ul>
+
+  
+       
+
+        <a href="/" className="back-button">Go Back</a>
+      </div>
     </div>
   );
 };
