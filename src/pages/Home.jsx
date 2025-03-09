@@ -33,6 +33,7 @@ const Home = () => {
           <RecipeCard
             key={recipe.idMeal}
             recipe={{
+              idMeal: recipe.idMeal,
               title: recipe.strMeal,
               description: recipe.strInstructions,
               image: recipe.strMealThumb,
