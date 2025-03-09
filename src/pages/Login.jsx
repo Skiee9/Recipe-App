@@ -11,7 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
   const provider = new GoogleAuthProvider();
 
-  // 🔵 Login with Email & Password
+//   🔵 Login with Email & Password
   const handleLogin = async (e) => {
     e.preventDefault();
     setError(null);
@@ -28,6 +28,31 @@ const Login = () => {
       setError("Invalid email or password!");
     }
   };
+// const handleLogin = async (e) => {
+//     e.preventDefault();
+//     try {
+//       const response = await fetch(
+//         "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCytw1R7nNOSvAsg_c6yG1ibepTFXydBsI",
+//         {
+//           method: "POST",
+//           headers: { "Content-Type": "application/json" },
+//           body: JSON.stringify({ email, password, returnSecureToken: true }),
+//         }
+//       );
+  
+//       const data = await response.json();
+//       console.log("Login Response:", data); // Debugging: Check Firebase response
+  
+//       if (!response.ok) {
+//         throw new Error(data.error.message); // Log specific Firebase error
+//       }
+  
+//       console.log("User logged in:", data);
+//     } catch (error) {
+//       console.error("Login Error:", error.message); // Show the exact error
+//     }
+//   };
+  
 
   // 🔴 Google Login
   const handleGoogleLogin = async () => {
