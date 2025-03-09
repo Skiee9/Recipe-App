@@ -7,7 +7,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchRecipes = async () => {
-    // 'https://www.themealdb.com/api/json/v1/1/search.php?s='
+    
     try {
       const res = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=');
       const data = await res.json();
