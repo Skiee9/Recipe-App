@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SearchBar from './components/SearchBar';
 import Home from './pages/Home'
+import Login from "./pages/Login"; 
 // import RecipeDetail from './components/RecipeDetail';
 // import About from './pages/About'
 import RecipePage from './pages/RecipePage';
@@ -15,6 +16,7 @@ const App = () => {
        <Routes>
       <Route path="/" element={<Home />} />
       {/* <Route path="/about" element={<About />} /> */}
+      <Route path="/login" element={<Login />} /> 
       <Route path="/recipe/:idMeal" element={<RecipePage/>} />
     </Routes>
     </BrowserRouter>
