@@ -101,7 +101,7 @@
     justify-content: space-between; /* Space between sections */
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0;
     width: 95%;
     margin: auto;
 }
@@ -112,16 +112,17 @@
     flex-wrap: wrap;
     justify-content:space-between;
     /* align-items: last baseline; */
-    width: 220px;
+    width: 280px;
     /* background: #9a4545; */
     padding: 15px;
     border-radius: 10px;
     position: sticky;
+    text-align: center;
     top: 40px;
     height: fit-content;
     max-height: 90vh;
     overflow-y: auto;
-    gap: 100px; /* Adds spacing between the two containers */
+    gap: 260px; /* Adds spacing between the two containers */
 }
 
 .sidebar-section {

@@ -3,12 +3,14 @@
     justify-content: center;
     align-items: center;
     padding: 40px 10px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background: rgb(251,240,63);
+    background: radial-gradient(circle, rgba(251,240,63,1) 0%, rgba(251,184,65,0.876715652081145) 15%, rgba(251,237,66,0.8122898817730217) 25%, rgba(251,172,67,0.9355391814929097) 51%, rgba(252,167,68,1) 79%, rgba(252,214,70,1) 100%);
   }
   
   .recipe-container {
     max-width: 900px;
-    background: white;
+    /* background: white; */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
