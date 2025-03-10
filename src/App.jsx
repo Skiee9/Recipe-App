@@ -11,7 +11,7 @@ import Recipes from './pages/Recipes';
 import About from './pages/About'
 import RecipePage from './pages/RecipePage';
 
-
+import "./App.css"
 
 
 const App = () => {

@@ -5,6 +5,8 @@ nav{
     font-weight: 600;
     justify-content: center;
     align-items: center;
+    background-color: #FFF7ED;
+    /* position: sticky; */
     /* flex-direction:column; */
     /* justify-content:center; */
     /* justify-content: space-around; */
@@ -13,7 +15,7 @@ nav{
     display: flex;
     margin: 0 auto;
    gap:20px;
-   
+   /* position: sticky; */
 
 }
 .center-nav a{

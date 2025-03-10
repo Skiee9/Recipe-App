@@ -10,7 +10,7 @@ const Navbar = () => {
 
     {/* starting navbar */}
     <div>
-      <Link to="/home"><img src='https://cdn.freebiesupply.com/logos/thumbs/2x/my-recipes-logo.png' alt='logo' height="40px" width="50px"/></Link>
+      <Link to="/"><img src='https://cdn.freebiesupply.com/logos/thumbs/2x/my-recipes-logo.png' alt='logo' height="40px" width="50px"/></Link>
     </div>
 
 

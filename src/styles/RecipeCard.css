@@ -13,7 +13,7 @@
      display: grid;
      /* width:90vw; */
      margin: auto;
-    grid-template-columns:repeat(3,1fr); 
+    grid-template-columns:repeat(1,1fr); 
     gap:30px;
     margin:17px;
     padding:10px 12px;
@@ -59,5 +59,54 @@
   
   .recipe-btn:hover {
     background-color: #ff5722;
+  }
+  .page-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;  /* Center content horizontally */
+    align-items: flex-start;  /* Align items at the top */
+    gap: 20px;  /* Space between sections */
+    padding: 20px;
+  }
+  
+  .left-sidebar,
+  .right-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: fit-content; 
+  }
+  
+  /* .recipes-container {
+    flex: 1; 
+    max-width: 800px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px;
+  } */
+  
+  .left-sidebar ul,
+  .right-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .left-sidebar li,
+  .right-sidebar li {
+    padding: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .left-sidebar li:hover,
+  .right-sidebar li:hover {
+    color: #ff6347; /* Highlight effect */
   }
   

@@ -26,22 +26,62 @@ const Home = () => {
   if (loading) return <h2>Loading Recipes...</h2>;
 
   return (
-    <div >
-      {/* <h1>Popular Recipes</h1> */}
-      <div className="recipes-container">
-        {recipes && recipes.map((recipe) => (
-          <RecipeCard
-            key={recipe.idMeal}
-            recipe={{
-              idMeal: recipe.idMeal,
-              title: recipe.strMeal,
-              description: recipe.strInstructions,
-              image: recipe.strMealThumb,
-            }}
-          />
-        ))}
-      </div>
-    </div>
+    // <div >
+    //   {/* <h1>Popular Recipes</h1> */}
+    //   <div className="recipes-container">
+    //     {recipes && recipes.map((recipe) => (
+    //       <RecipeCard
+    //         key={recipe.idMeal}
+    //         recipe={{
+    //           idMeal: recipe.idMeal,
+    //           title: recipe.strMeal,
+    //           description: recipe.strInstructions,
+    //           image: recipe.strMealThumb,
+    //         }}
+    //       />
+    //     ))}
+    //   </div>
+    // </div>
+    <div className="page-container">
+  {/* Left Sidebar */}
+  <div className="left-sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li>Vegetarian</li>
+      <li>Non-Vegetarian</li>
+      <li>Vegan</li>
+      <li>Gluten-Free</li>
+    </ul>
+  </div>
+
+  {/* Centered Recipes Container */}
+  <div className="recipes-container">
+    {recipes &&
+      recipes.map((recipe) => (
+        <RecipeCard
+          key={recipe.idMeal}
+          recipe={{
+            idMeal: recipe.idMeal,
+            title: recipe.strMeal,
+            description: recipe.strInstructions,
+            image: recipe.strMealThumb,
+          }}
+        />
+      ))}
+  </div>
+
+  {/* Right Sidebar */}
+  <div className="right-sidebar">
+    <h3>Popular Recipes</h3>
+    <p>Try these amazing dishes!</p>
+    <ul>
+      <li>Chicken Biryani</li>
+      <li>Paneer Butter Masala</li>
+      <li>Pasta Alfredo</li>
+    </ul>
+  </div>
+</div>
+
   );
 };
 
