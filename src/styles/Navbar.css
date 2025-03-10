@@ -6,7 +6,8 @@ nav{
     font-weight: 600;
     justify-content: center;
     align-items: center;
-    background-color: rgb(27, 26, 28);
+    background-color: #fbe5b1cf;
+    /* background-color: rgba(7, 7, 7, 0.533); */
     /* background-color: #FFF7ED; */
     position: sticky;
     top: 0;
@@ -26,11 +27,11 @@ nav{
 }
 .center-nav a{
    text-decoration: none;
-   color:blue;
+   color:rgb(7, 7, 7);
    
 }
 nav button{
-    background-color:  #F2F6FF;
+    background-color:  #ffe3a3;
     /* text-decoration: none;
     color:blue; */
     padding:9px 20px;
@@ -40,7 +41,7 @@ nav button{
 }
 nav button a{
     text-decoration: none;
-    color:blue;
+    color:rgb(17, 17, 18);
     font-weight: 600;
     font-size:1rem;
    

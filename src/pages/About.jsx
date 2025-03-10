@@ -25,6 +25,73 @@ const About = () => {
         </ol>
   
         <p>Start creating your favorite recipes today! 🎉</p>
+
+
+
+        <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>   <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>   <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>   <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>   <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>   <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>   <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>   <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>   <h3>How to Use:</h3>
+        <ol>
+          <li>✅ Register or log in to access your personal recipe dashboard.</li>
+          <li>✅ Add new recipes by entering the title, ingredients, and steps.</li>
+          <li>✅ View, edit, or delete your saved recipes at any time.</li>
+        </ol>
+  
+        <p>Start creating your favorite recipes today! 🎉</p>
       </div>
     );
   };
