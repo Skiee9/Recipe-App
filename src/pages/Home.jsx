@@ -101,6 +101,14 @@ const Home = () => {
         <li>Quick Recipes</li>
       </ul>
     </div>
+    <div className="sidebar-section">
+      <h3>Latest Recipes</h3>
+      <ul>
+        <li>Avocado Toast</li>
+        <li>Mango Smoothie</li>
+        <li>Grilled Salmon</li>
+      </ul>
+    </div>
   </div>
 
   {/* Centered Recipes Container */}
@@ -127,6 +135,15 @@ const Home = () => {
         <li>Chicken Biryani</li>
         <li>Paneer Butter Masala</li>
         <li>Pasta Alfredo</li>
+        <li>migas</li>
+      </ul>
+    </div>
+    <div className="sidebar-section">
+      <h3>Latest Recipes</h3>
+      <ul>
+        <li>Avocado Toast</li>
+        <li>Mango Smoothie</li>
+        <li>Grilled Salmon</li>
       </ul>
     </div>
     <div className="sidebar-section">

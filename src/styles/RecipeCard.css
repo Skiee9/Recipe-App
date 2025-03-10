@@ -122,7 +122,7 @@
     height: fit-content;
     max-height: 90vh;
     overflow-y: auto;
-    gap: 260px; /* Adds spacing between the two containers */
+    gap: 30px;
 }
 
 .sidebar-section {
