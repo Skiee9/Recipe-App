@@ -42,16 +42,65 @@ const Home = () => {
     //     ))}
     //   </div>
     // </div>
-    <div className="page-container">
+//     <div className="page-container">
+//   {/* Left Sidebar */}
+//   <div className="left-sidebar">
+//     <h3>Categories</h3>
+//     <ul>
+//       <li>Vegetarian</li>
+//       <li>Non-Vegetarian</li>
+//       <li>Vegan</li>
+//       <li>Gluten-Free</li>
+//     </ul>
+//   </div>
+
+//   {/* Centered Recipes Container */}
+//   <div className="recipes-container">
+//     {recipes &&
+//       recipes.map((recipe) => (
+//         <RecipeCard
+//           key={recipe.idMeal}
+//           recipe={{
+//             idMeal: recipe.idMeal,
+//             title: recipe.strMeal,
+//             description: recipe.strInstructions,
+//             image: recipe.strMealThumb,
+//           }}
+//         />
+//       ))}
+//   </div>
+
+//   {/* Right Sidebar */}
+//   <div className="right-sidebar">
+//     <h3>Popular Recipes</h3>
+//     <p>Try these amazing dishes!</p>
+//     <ul>
+//       <li>Chicken Biryani</li>
+//       <li>Paneer Butter Masala</li>
+//       <li>Pasta Alfredo</li>
+//     </ul>
+//   </div>
+// </div>
+<div className="page-container">
   {/* Left Sidebar */}
   <div className="left-sidebar">
-    <h3>Categories</h3>
-    <ul>
-      <li>Vegetarian</li>
-      <li>Non-Vegetarian</li>
-      <li>Vegan</li>
-      <li>Gluten-Free</li>
-    </ul>
+    <div className="sidebar-section">
+      <h3>Categories</h3>
+      <ul>
+        <li>Vegetarian</li>
+        <li>Non-Vegetarian</li>
+        <li>Vegan</li>
+        <li>Gluten-Free</li>
+      </ul>
+    </div>
+    <div className="sidebar-section">
+      <h3>Filters</h3>
+      <ul>
+        <li>Low Calorie</li>
+        <li>High Protein</li>
+        <li>Quick Recipes</li>
+      </ul>
+    </div>
   </div>
 
   {/* Centered Recipes Container */}
@@ -72,13 +121,22 @@ const Home = () => {
 
   {/* Right Sidebar */}
   <div className="right-sidebar">
-    <h3>Popular Recipes</h3>
-    <p>Try these amazing dishes!</p>
-    <ul>
-      <li>Chicken Biryani</li>
-      <li>Paneer Butter Masala</li>
-      <li>Pasta Alfredo</li>
-    </ul>
+    <div className="sidebar-section">
+      <h3>Popular Recipes</h3>
+      <ul>
+        <li>Chicken Biryani</li>
+        <li>Paneer Butter Masala</li>
+        <li>Pasta Alfredo</li>
+      </ul>
+    </div>
+    <div className="sidebar-section">
+      <h3>Latest Recipes</h3>
+      <ul>
+        <li>Avocado Toast</li>
+        <li>Mango Smoothie</li>
+        <li>Grilled Salmon</li>
+      </ul>
+    </div>
   </div>
 </div>
 

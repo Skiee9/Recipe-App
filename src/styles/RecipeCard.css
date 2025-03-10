@@ -4,16 +4,22 @@
   /* object-fit: cover; */
     /* display: grid; */
     /* grid-template-columns:repeat(3,1fr); */
-    background-color: #F2F6FF;
+    background-color:#FFC53D;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ 
     overflow: hidden;
     transition: transform 0.3s ease;
   }
+  .recipe-card :hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
   .recipes-container{
      display: grid;
-     background-color: #F2F6FF;
+     /* background-color: #ffffff; */
+     
      width: 60%;
+     border-radius: 10px;
      /* width:90vw; */
      margin: auto;
      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -53,7 +59,7 @@
   
   .recipe-btn {
     padding: 10px 20px;
-    background-color: #123651;
+    background-color: rgb(198,126,224);
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -65,37 +71,12 @@
   .recipe-btn:hover {
     background-color: #ff5722;
   }
-  .page-container {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center;  /* Center content horizontally */
-    align-items: flex-start;  /* Align items at the top */
-    gap: 20px;  /* Space between sections */
-    padding: 20px;
-  }
+ 
+   
   
-  .left-sidebar,
-  .right-sidebar {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 200px;
-    background: #f5f5f5;
-    padding: 15px;
-    border-radius: 10px;
-    position: sticky;
-    top: 20px;
-    height: fit-content; 
-  }
   
-  /* .recipes-container {
-    flex: 1; 
-    max-width: 800px; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 15px;
-  } */
+  
+ 
   
   .left-sidebar ul,
   .right-sidebar ul {
@@ -112,6 +93,46 @@
   
   .left-sidebar li:hover,
   .right-sidebar li:hover {
-    color: #ff6347; /* Highlight effect */
+    color: #ff6347; 
   }
-  
+   
+   .page-container {
+    display: flex;
+    justify-content: space-between; /* Space between sections */
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+}
+
+.left-sidebar, .right-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* align-items: last baseline; */
+    width: 220px;
+    /* background: #9a4545; */
+    padding: 15px;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    max-height: 90vh;
+    overflow-y: auto;
+    gap: 100px; /* Adds spacing between the two containers */
+}
+
+.sidebar-section {
+    background: rgb(253, 244, 244);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+.left-sidebar .sidebar-section:last-child,
+.right-sidebar .sidebar-section:last-child {
+    margin-top: auto; 
+   
+}

@@ -1,11 +1,13 @@
 nav{
     display:flex;
-    padding:0 4px;
+    /* padding:0 8px; */
+    /* margin: 60px; */
     font-size: 1.2rem;
     font-weight: 600;
     justify-content: center;
     align-items: center;
-    background-color: #FFF7ED;
+    background-color: rgb(27, 26, 28);
+    /* background-color: #FFF7ED; */
     position: sticky;
     top: 0;
     width: 100%;
