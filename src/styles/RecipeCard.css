@@ -1,6 +1,7 @@
 .recipe-card {
   display: flex;
   flex-direction: column;
+  text-align: center;
   /* object-fit: cover; */
     /* display: grid; */
     /* grid-template-columns:repeat(3,1fr); */
@@ -12,7 +13,7 @@
     transition: transform 0.3s ease;
   }
   .recipe-card :hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
   }
   .recipes-container{
      display: grid;
@@ -30,7 +31,11 @@
     justify-items: center;
   }
   .recipe-card:hover {
+    /* transform: translate(50px); */
+    /* transform: skew(25deg); */
     transform: translateY(-15px);
+       box-shadow: rgba(227, 119, 86, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    /* transition: transform 0.3s ease-in-out; */
   }
   
   .recipe-image {
@@ -59,17 +64,19 @@
   
   .recipe-btn {
     padding: 10px 20px;
-    background-color: rgb(198,126,224);
-    color: #fff;
+    background-color: #f9cf6d;
+    color: #ff1601;
+    font-weight: 600;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
     font-size: 14px;
     transition: background-color 0.3s ease;
   }
   
   .recipe-btn:hover {
-    background-color: #ff5722;
+    background-color: #f7d00c;
   }
  
    
