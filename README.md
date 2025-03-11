@@ -29,10 +29,7 @@ A **React + Firebase** recipe  app where users can **browse, add, and manage rec
 ## 📸 Screenshots  
 
 ### 📌 Home Page  
-![Home Page](![alt text](image.png))  
-
-### 📌 Recipe Detail Page  
-![Recipe Page](![alt text](image-1.png))  
+![Home Page](./src/assets/recipe.png)
 
 ---
 
