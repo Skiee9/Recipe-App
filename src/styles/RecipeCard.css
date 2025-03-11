@@ -137,3 +137,13 @@
     margin-top: auto; 
    
 }
+@media (max-width: 768px) {
+  .left-sidebar,
+  .right-sidebar {
+    display: none; 
+  }
+
+  .recipes-container {
+    width: 100%; 
+  }
+}
