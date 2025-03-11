@@ -43,7 +43,7 @@ A **React + Firebase** recipe  app where users can **browse, add, and manage rec
 
 ### Clone the Repository  
 ```sh
-git clone https://github.com/YOUR_GITHUB_USERNAME/recipe-app.git
+git clone https://github.com/Skiee9/Recipe-App.git
 cd recipe-app
 npm install
 
