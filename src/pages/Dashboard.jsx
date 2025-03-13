@@ -62,6 +62,7 @@ import { collection, query, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import AddRecipeForm from "../components/AddRecipeForm";
+import "../styles/Dashboard.css"; 
 
 const Dashboard = () => {
   const [recipes, setRecipes] = useState([]);
@@ -100,7 +101,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
+    <div className="recipe-form">
       <h2>Welcome, {auth.currentUser?.email} 🎉</h2>
       <button onClick={handleLogout}>Logout</button>
 
