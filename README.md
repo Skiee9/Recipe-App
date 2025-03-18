@@ -1,4 +1,4 @@
-# 📚 Recipe  App  
+#  Recipe  App  
 
 A **React + Firebase** recipe  app where users can **browse, add, and manage recipes**. The app includes **Firebase Authentication** for user login and a **Firestore Database** for storing recipe details.  
 
